@@ -4,6 +4,28 @@ $(document).ready(function () {
     // ----- preloader section -----
     $(".preloader").fadeOut("fast");
 
+    // ----- owl carousel -----
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        center: true,
+        margin: 10,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+
 });
 
 // ----- opening and closing hours scripting -----
@@ -84,3 +106,17 @@ function showTime() {
     setTimeout(showTime, 100);
 }
 showTime();
+
+// ----- gsap counter scripting -----
+const items = document.querySelectorAll(".data");
+
+gsap.from(items, {
+    textContent: 0,
+    duration: 3,
+    ease: Power1.easeIn,
+    snap: { textContent: 1 }
+    // onUpdate: textContent.replace(/\B(?=(\d{3})+(?!\d))/g, ","),
+});
+
+// ----- initialising wow js -----
+new WOW().init();
