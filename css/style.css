@@ -517,6 +517,11 @@ section.about-home::before {
     background: rgba(0, 0, 0, 0.3);
 }
 
+section.about-content .sub-title {
+    font-size: 0.9rem;
+    text-transform: none;
+}
+
 section.about-home .container-xxl {
     display: flex;
     flex-direction: column;
@@ -558,6 +563,24 @@ section.about-content span {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+}
+
+section.about-content .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.about-content .card-body a,
+section.about-content .card-body i {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-02);
+}
+
+section.about-content .card-body a:hover,
+section.about-content .card-body a:hover i {
+    color: var(--color-05);
 }
 
 /* -------------------------------------------------- mobile query -------------------------------------------------- */
