@@ -1,0 +1,222 @@
+/* ----- google font "Montserrat" ----- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ----- root styling ----- */
+:root {
+    /* ----- color ----- */
+    --color-01: #FFFFFF;
+    --color-02: #242424;
+    --color-03: #3D85B8;
+    --color-04: #B31B38;
+    --color-05: #006B38;
+    --color-07: #444444;
+}
+
+/* ----- base styling ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    font-size: 100%;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+/* ----- custom styling ----- */
+.title {
+    font-weight: 700;
+    padding: 0.5vw 0;
+    letter-spacing: 0.1rem !important;
+    text-transform: uppercase;
+}
+
+.title span {
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+}
+
+.btn {
+    font-weight: 400;
+    padding: 0.8rem 1.2rem;
+    color: var(--color-01);
+    letter-spacing: 0.01rem;
+    text-transform: uppercase;
+}
+
+.sub-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-07);
+    line-height: 2;
+    text-transform: uppercase;
+}
+
+.contact {
+    background: var(--color-05);
+}
+
+/* ----- preloader section styling ----- */
+section.preloader {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-01);
+}
+
+section.preloader h6 {
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    color: var(--color-07);
+}
+
+section.preloader img {
+    width: 5rem;
+}
+
+/* ----- header section styling ----- */
+header.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 999;
+    /* padding: 0 15vw; */
+}
+
+header.header.scroll {
+    position: absolute;
+}
+
+/* header nav icon */
+header.header .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-02);
+}
+
+header.header .row .col {
+    display: flex;
+}
+
+header.header .row .col:first-child {
+    justify-content: left;
+}
+
+header.header .row .col:last-child {
+    justify-content: right;
+}
+
+header.header .row .nav-icon {
+    font-size: 0.9rem;
+    margin-right: 1rem;
+    color: var(--color-01);
+    text-transform: uppercase;
+}
+
+header.header .row .col #timeDiv.open {
+    color: var(--color-05);
+    font-weight: 600 !important;
+}
+
+header.header .row .col #timeDiv.closed {
+    color: var(--color-04);
+}
+
+#timeDiv,
+#MyClockDisplay {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#MyClockDisplay {
+    margin-right: 0.3rem;
+    margin-top: 0.09rem;
+}
+
+/* header nav section */
+nav.navbar {
+    background: var(--color-01);
+}
+
+nav.navbar,
+header.header .row {
+    padding: 0.5vw 15vw;
+}
+
+nav.navbar .navbar-toggler {
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    font-size: 2rem;
+    color: var(--color-02);
+}
+
+nav.navbar .navbar-brand img {
+    max-width: 100px;
+}
+
+nav.navbar .nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+nav.navbar .navbar-collapse {
+    padding-top: 1rem;
+}
+
+/* -------------------------------------------------- mobile query -------------------------------------------------- */
+
+/* ----- max-width 991px ----- */
+@media (max-width: 991px) {
+
+    /* ----- header navigation ----- */
+    header.header .row .nav-icon {
+        font-size: 1rem !important;
+    }
+
+    header.header .row .nav-icon span {
+        display: none !important;
+    }
+
+    nav.navbar,
+    header.header .row {
+        padding: 0.5vw 2vw !important;
+    }
+
+    /* ----- home section ----- */
+    section.home .carousel button {
+        display: none !important;
+    }
+
+    /* ----- about section ----- */
+    .service-box {
+        margin-bottom: 2rem;
+    }
+
+}
