@@ -181,9 +181,11 @@ nav.navbar .navbar-brand img {
     max-width: 100px;
 }
 
-nav.navbar .nav-link {
-    font-weight: 600;
-    text-transform: uppercase;
+nav.navbar .nav-link,
+nav.navbar .dropdown-item {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
 }
 
 nav.navbar .navbar-collapse {
@@ -474,8 +476,20 @@ section.contact .contact-bg::before {
 
 /* ----- review section ----- */
 section.review {
-    padding: 2vw 0;
+    /* padding: 1vw 0; */
     background: var(--color-01);
+}
+
+section.review .owl-carousel {
+    padding: 3vw 0;
+}
+
+section.review .owl-item .card {
+    height: 18rem;
+}
+
+section.review .card .sub-title {
+    text-transform: none !important;
 }
 
 section.review div.item {
