@@ -60,7 +60,7 @@ var checkTime = function () {
         timeDiv.className = 'open';
     }
 
-    else if ((dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5) && hour >= 09 && hour <= 17) {
+    else if ((dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5) && hour >= 08 && hour <= 17) {
         hour = ((hour + 11) % 12 + 1);
         timeDiv.innerHTML = 'open!';
         timeDiv.className = 'open';

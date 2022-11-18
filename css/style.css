@@ -449,6 +449,8 @@ section.contact .row .card-body {
 
 section.contact .row .contact-info {
     width: 100%;
+    font-size: 0.9rem;
+    font-weight: 600;
     margin: 0.5rem 0;
     color: var(--color-02);
 }
