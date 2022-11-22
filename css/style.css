@@ -104,7 +104,6 @@ header.header {
     width: 100%;
     height: auto;
     z-index: 999;
-    /* padding: 0 15vw; */
 }
 
 header.header.scroll {
@@ -166,7 +165,7 @@ nav.navbar {
 
 nav.navbar,
 header.header .row {
-    padding: 0.5vw 15vw;
+    padding: 0.5vw 10vw;
 }
 
 nav.navbar .navbar-toggler {
@@ -183,13 +182,19 @@ nav.navbar .navbar-brand img {
 
 nav.navbar .nav-link,
 nav.navbar .dropdown-item {
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 600;
+    /* letter-spacing: 0.1rem; */
     text-transform: uppercase;
 }
 
 nav.navbar .navbar-collapse {
     padding-top: 1rem;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
 }
 
 /* ----- home section styling ----- */
@@ -246,7 +251,7 @@ section.home .container-fluid .row {
 }
 
 .counter {
-    padding: 2vw;
+    padding: 2rem 0;
     z-index: 1;
     display: flex;
     align-items: center;
@@ -521,7 +526,7 @@ section.about-home::before {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 section.about-content .sub-title {
@@ -590,12 +595,29 @@ section.about-content .card-body a:hover i {
     color: var(--color-05);
 }
 
+/* -------------------------------------------------- staff section -------------------------------------------------- */
+.staff-container {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 /* -------------------------------------------------- mobile query -------------------------------------------------- */
 
 /* ----- max-width 991px ----- */
 @media (max-width: 991px) {
 
     /* ----- header navigation ----- */
+    header.header {
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: fixed;
+    }
+
     header.header .row .nav-icon {
         font-size: 1rem !important;
     }
@@ -609,12 +631,45 @@ section.about-content .card-body a:hover i {
         padding: 0.5vw 2vw !important;
     }
 
+    nav.navbar .nav-link,
+    nav.navbar .dropdown-item {
+        font-weight: 650;
+        padding: 2%;
+    }
+
+    nav.navbar .navbar-collapse {
+        padding-bottom: 1rem;
+        padding-top: 2rem;
+    }
+
     /* ----- home section ----- */
+    section.home .carousel-item {
+        height: 60vh !important;
+    }
+
+    section.home .carousel-item .container-fluid .col-lg-4 {
+        padding-top: 50%;
+    }
+
     section.home .carousel button {
         display: none !important;
     }
 
     /* ----- about section ----- */
+    section.about {
+        padding-top: 2rem;
+    }
+
+    .counter {
+        padding: 0 !important;
+        padding-top: 2rem !important;
+    }
+
+    section.about .title,
+    section.about .sub-title {
+        text-align: left !important;
+    }
+
     .service-box {
         margin-bottom: 2rem;
     }
