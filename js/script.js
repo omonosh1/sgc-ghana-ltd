@@ -1,9 +1,5 @@
 // ----- jquery scripting -----
 $(document).ready(function () {
-
-    // ----- preloader section -----
-    $(".preloader").fadeOut("fast");
-
     // ----- owl carousel -----
     $('.owl-carousel').owlCarousel({
         loop: true,

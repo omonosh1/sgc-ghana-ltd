@@ -204,7 +204,7 @@ section.home {
 }
 
 section.home .carousel-item {
-    min-height: 55vh;
+    min-height: 70vh;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
@@ -649,10 +649,6 @@ section.about-content .card-body a:hover i {
     }
 
     /* ----- home section ----- */
-    section.home .carousel-item {
-        height: 60vh !important;
-    }
-
     section.home .carousel-item .container-fluid .col-lg-4 {
         padding-top: 50%;
     }
@@ -678,6 +674,11 @@ section.about-content .card-body a:hover i {
 
     .service-box {
         margin-bottom: 2rem;
+    }
+
+    /* ----- footer section ----- */
+    footer {
+        padding: 2%;
     }
 
 }
