@@ -601,6 +601,10 @@ section.about-content .card-body a:hover i {
     color: var(--color-05);
 }
 
+footer {
+    padding: 1rem;
+}
+
 /* -------------------------------------------------- staff section -------------------------------------------------- */
 .staff-container {
     padding-top: 5rem;
@@ -674,11 +678,6 @@ section.about-content .card-body a:hover i {
 
     .service-box {
         margin-bottom: 2rem;
-    }
-
-    /* ----- footer section ----- */
-    footer {
-        padding: 2%;
     }
 
 }
