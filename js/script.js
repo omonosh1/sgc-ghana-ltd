@@ -3,8 +3,7 @@ $(document).ready(function () {
     // ----- owl carousel -----
     $('.owl-carousel').owlCarousel({
         loop: true,
-        center: true,
-        margin: 1,
+        margin: 10,
         nav: false,
         autoplay: true,
         autoplayTimeout: 8000,

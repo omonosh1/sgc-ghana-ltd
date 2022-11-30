@@ -10,6 +10,7 @@
     --color-04: #B31B38;
     --color-05: #006B38;
     --color-07: #444444;
+    --color-08: #D2A226;
 }
 
 /* ----- base styling ----- */
@@ -71,6 +72,10 @@ li {
 
 .contact {
     background: var(--color-05);
+}
+
+.star {
+    color: var(--color-08) !important;
 }
 
 /* ----- preloader section styling ----- */
@@ -493,6 +498,7 @@ section.review .owl-item .card {
 }
 
 section.review .card .sub-title {
+    font-size: 0.8rem;
     text-transform: none !important;
 }
 
@@ -540,7 +546,7 @@ section.about-content .sub-title {
     text-transform: none;
 }
 
-section.about-home .container-xxl {
+section.about-home .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -553,7 +559,7 @@ section.about-home h1 {
 }
 
 section.about-content {
-    padding: 10vw;
+    padding: 5vh 2vw;
 }
 
 section.about-content img {
@@ -664,6 +670,10 @@ footer {
     /* ----- about section ----- */
     section.about {
         padding-top: 2rem;
+    }
+
+    section.about-home .container h1 {
+        padding-top: 5rem;
     }
 
     .counter {
