@@ -1,5 +1,16 @@
 // ----- jquery scripting -----
 $(document).ready(function () {
+    // ----- window on scroll -----
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop()) {
+            $('nav').addClass('scroll');
+        }
+        else {
+            $('nav').removeClass('scroll');
+        }
+
+    })
+
     // ----- owl carousel -----
     $('.owl-carousel').owlCarousel({
         loop: true,
